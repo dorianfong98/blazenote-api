@@ -5,11 +5,11 @@ compatibility_flags = [ "nodejs_compat" ]
 
 # TODO: In-Workshop Activities. Uncomment the code below:
  
-# [[d1_databases]]
-# binding = "DB"
-# database_name = "blazenote"
-# database_id = "<your-database-id>"
-# migrations_dir = "./migrations"
+[[d1_databases]]
+binding = "DB"
+database_name = "blazenote"
+database_id = "1bfed118-75a9-47af-b319-b73d68c5449e"
+migrations_dir = "./migrations"
 
 # [[r2_buckets]]
 # binding = "R2_BUCKET"
@@ -19,3 +19,6 @@ compatibility_flags = [ "nodejs_compat" ]
 # wrangler.toml (wrangler v3.88.0^)
 [observability.logs]
 enabled = true
+
+[vars]
+VITE_API_BASE_URL=api.metallic-bubble.sxplab.com
